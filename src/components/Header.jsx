@@ -42,7 +42,7 @@ const Header = () => {
   };
   return (
     <div className="absolute z-10 w-full px-4 md:px-8 py-2 bg-gradient-to-b from-black flex flex-row md:flex-row justify-between items-center">
-      <img className="w-48 mx-auto md:mx-0" src="public/logo.png" alt="logo" />
+      <img className="w-48 mx-auto md:mx-0" src="logo.png" alt="logo" />
       {user && (
         <div className="flex flex-col md:flex-row items-center mt-2 md:mt-0 space-y-2 md:space-y-0 md:space-x-4">
           <button
