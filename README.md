@@ -25,3 +25,23 @@ PopcornAI is a web app that lets you browse movies and get AI-powered recommenda
 ```bash
 git clone https://github.com/yourusername/popcornai.git
 cd popcornai
+2️⃣ Install Dependencies
+
+Make sure you have Node.js and npm installed:
+
+npm install
+
+3️⃣ Configure Environment Variables
+
+Create a .env file in the root directory and add your API keys:
+
+REACT_APP_TMDB_API=your_tmdb_api_key
+
+
+Replace your_tmdb_api_key with your actual TMDB API key.
+
+4️⃣ Start the Development Server
+npm start
+
+
+Open http://localhost:5173 in your browser to view the app.
