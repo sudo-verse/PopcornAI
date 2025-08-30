@@ -2,6 +2,8 @@
 
 PopcornAI is a web app that lets you browse movies and get AI-powered recommendations. It shows **now playing, popular, top-rated, and upcoming movies**, and you can search for movies based on genres or similar titles.
 
+https://github.com/user-attachments/assets/4e25976e-d95c-47a2-8562-cd698220f766
+
 ## Features
 
 - Browse now playing, popular, top-rated, and upcoming movies.
