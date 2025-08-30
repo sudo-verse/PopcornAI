@@ -1,13 +1,27 @@
-# React + Vite
+# PopcornAI 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+PopcornAI is a web app that lets you browse movies and get AI-powered recommendations. It shows **now playing, popular, top-rated, and upcoming movies**, and you can search for movies based on genres or similar titles.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Browse now playing, popular, top-rated, and upcoming movies.
+- Search movies by genre or similar titles using GPT-powered recommendations.
+- Responsive UI for desktop and mobile (built with React + TailwindCSS).
+- Firebase authentication (Sign In / Sign Up).
+- Smooth movie previews with background videos and blur effects.
 
-## Expanding the ESLint configuration
+## Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-# PopcornAI
+- **Frontend:** React, TailwindCSS
+- **State Management:** Redux Toolkit
+- **Authentication:** Firebase
+- **APIs:** TMDB API, Gemini API
+- **Hosting:** GitHub Pages / Vercel / Netlify (your choice)
+
+## Installation
+
+1. Clone the repo:
+
+```bash
+git clone https://github.com/yourusername/popcornai.git
+cd popcornai
