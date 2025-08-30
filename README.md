@@ -35,13 +35,15 @@ npm install
 
 Create a .env file in the root directory and add your API keys:
 
-REACT_APP_TMDB_API=your_tmdb_api_key
+VITE_APP_TMDB_API=your_tmdb_api_key
+VITE_GEMINI_KEY=your_gemini_api_key
 
 
 Replace your_tmdb_api_key with your actual TMDB API key.
+eplace your_gemini_api_key with your actual GEMINI API key.
 
 4️⃣ Start the Development Server
-npm start
+npm run dev
 
 
 Open http://localhost:5173 in your browser to view the app.
