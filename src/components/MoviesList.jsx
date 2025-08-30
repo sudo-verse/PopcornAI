@@ -2,11 +2,17 @@ import React from "react";
 import Moviescard from "./Moviescard";
 
 const MoviesList = ({ title, movies }) => {
-  return (
-    <div className="my-8">
-      <h1 className="font-bold text-2xl text-red-500 mb-4">{title}</h1>
+  if (!movies || movies.length === 0) return null;
 
-      <div className="flex space-x-4 overflow-x-auto scrollbar-hide py-2">
+  return (
+    <div className="my-6 lg:my-8">
+      {/* Category Title */}
+      <h2 className="font-bold text-xl sm:text-2xl lg:text-3xl text-red-500 mb-4 px-2 lg:px-0">
+        {title}
+      </h2>
+
+      {/* Horizontal scroll container */}
+      <div className="flex space-x-4 overflow-x-auto scrollbar-hide py-2 px-2 lg:px-0">
         {movies.map((movie) => (
           <Moviescard key={movie.id} movie={movie} />
         ))}

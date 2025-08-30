@@ -6,7 +6,7 @@ const ShowGptSearch = () => {
     <div>
       <div className="absolute -z-10">
         <img
-          className="h-screen w-screen object-cover blur-sm"
+          className="h-screen w-screen object-cover  blur-sm"
           src={BACKGROUND_IMAGE_URL}
           alt="background"
         />

@@ -6,7 +6,7 @@ import { onAuthStateChanged } from "firebase/auth";
 import { addUser, removeUser } from "../utils/userSlice";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
-import { AVATAR, LOGO } from "../utils/constants";
+import { AVATAR } from "../utils/constants";
 import { toggleGptSearch } from "../utils/gptSlice";
 
 const Header = () => {
@@ -41,23 +41,25 @@ const Header = () => {
     dispatch(toggleGptSearch());
   };
   return (
-    <div className="absolute z-10 w-full px-8 py-2 bg-gradient-to-b from-black flex justify-between">
-      <img className="w-48 " src="public/logo.png" alt="logo" />
+    <div className="absolute z-10 w-full px-4 md:px-8 py-2 bg-gradient-to-b from-black flex flex-row md:flex-row justify-between items-center">
+      <img className="w-48 mx-auto md:mx-0" src="public/logo.png" alt="logo" />
       {user && (
-        <div className="flex">
+        <div className="flex flex-col md:flex-row items-center mt-2 md:mt-0 space-y-2 md:space-y-0 md:space-x-4">
           <button
-            className="px-4 py-2 m-2 p-2 bg-purple-500 text-white rounded hover:bg-purple-600 cursor-pointer"
+            className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 cursor-pointer text-sm md:text-base"
             onClick={handleToggleGptSearch}
           >
             {gptSearch ? "GPT Search" : "Homepage"}
           </button>
-          <img src={AVATAR} className="w-16" alt="avatar" />
-          <button
-            className="font-extrabold text-red-500 m-2 cursor-pointer "
-            onClick={handleSignOut}
-          >
-            Sign Out
-          </button>
+          <div className="flex items-center space-x-2">
+            <img src={AVATAR} className="w-10 h-10 rounded-full" alt="avatar" />
+            <button
+              className="font-extrabold text-white text-sm md:text-base cursor-pointer hover:text-red-500 transition-colors"
+              onClick={handleSignOut}
+            >
+              Sign Out
+            </button>
+          </div>
         </div>
       )}
     </div>

@@ -16,7 +16,7 @@ export const Browse = () => {
   useUpcomingMovies();
 
   return (
-    <div>
+    <div className="min-h-screen  text-white">
       <Header />
       {!showGptSearch ? (
         <ShowGptSearch />
